@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="h4k3rom"
+           fetch="git://github.com/"
+           review="gerrit.h4k3rom-rom.com"
+           revision="refs/heads/18.1"
+           sync-j="8" />
+
+  <remote  name="lineage"
+           fetch="git://github.com/"
+           review="review.lineageos.org"
+           revision="refs/heads/lineage-18.1"
+           sync-j="8" />
+
+  <!-- Include lineage repos -->
+  <include name="lineage.xml" />
+    
+  <project path="lineage-sdk" name="H4K3ROM/android_lineage-sdk" remote="h4k3rom" /> 
+
+    <!-- H4K3ROM additions -->
+  <project path="device/lineage/sepolicy" name="H4K3ROM/android_device_lineage_sepolicy" groups="pdk" remote="h4k3rom" />
+  <project path="vendor/lineage" name="H4K3ROM/android_vendor_lineage" remote="h4k3rom" />
+  <project path="packages/apps/H4K3RWalls" name="H4K3ROM/H4K3RWalls" remote="h4k3rom" />    
+  <project path="packages/apps/H4K3RWebb" name="H4K3ROM/H4K3RWebb" remote="h4k3rom" />      
+
+ <!-- H4K3ROM AOSP Repos -->
+  <project path="bionic" name="H4K3ROM/android_bionic" remote="h4k3rom" />
+  <project path="build/make" name="H4K3ROM/android_build" groups="pdk" remote="h4k3rom" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+  <project path="build/soong" name="H4K3ROM/android_build_soong" groups="pdk,tradefed" remote="h4k3rom" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+  <project path="frameworks/base" name="H4K3ROM/android_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="h4k3rom" />
+  <project path="frameworks/native" name="H4K3ROM/android_frameworks_native" groups="pdk" remote="h4k3rom" />
+  <!-- <project path="packages/apps/Settings" name="H4K3ROM/android_packages_apps_Settings" remote="h4k3rom" /> -->
+  <project path="packages/apps/SetupWizard" name="H4K3ROM/android_packages_apps_SetupWizard" remote="h4k3rom" />
+  <project path="packages/apps/ThemePicker" name="H4K3ROM/android_packages_apps_ThemePicker" remote="h4k3rom" />
+  <project path="packages/apps/WallpaperPicker2" name="H4K3ROM/android_packages_apps_WallpaperPicker2" groups="pdk-fs" remote="h4k3rom" />
+   <!--  <project path="packages/modules/DnsResolver" name="H4K3ROM/packages_modules_DnsResolver" groups="pdk-cw-fs,pdk-fs" remote="h4k3rom" />
+  <project path="packages/services/Telecomm" name="H4K3ROM/packages_services_Telecomm" remote="h4k3rom" /> -->
+  <project path="platform_manifest" name="H4K3ROM/android" remote="h4k3rom" />
+  <project path="system/core" name="H4K3ROM/android_system_core" groups="pdk" remote="h4k3rom" />
+  <project path="system/sepolicy" name="H4K3ROM/android_system_sepolicy" groups="pdk" remote="h4k3rom" />
+  
+  <!-- H4K3ROM Project Specific Repos To Sync -->
+  <project path="packages/apps/ElmyraService" name="H4K3ROM/android_packages_apps_ElmyraService" remote="h4k3rom" />
+  <project path="kernel/google/msm-4.9" name="H4K3ROM/android_kernel_google_msm-4.9"  remote="h4k3rom" />
+  <project path="vendor/google" name="H4K3ROM/proprietary_vendor_google" remote="h4k3rom" />  
+  <project path="device/google/bonito" name="H4K3ROM/android_device_google_bonito" remote="h4k3rom" />  
+
+
+</manifest>
