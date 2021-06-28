@@ -1,0 +1,2 @@
+# android
+platform/manifest
