@@ -36,6 +36,11 @@ ccache -o compression=true
 ```
 ***Quoted from LineageOS Wiki***
 
+***Install as per instructions for Bonito from LineageOS Wiki***
+```
+https://wiki.lineageos.org/devices/bonito/install
+```
+
 I break things and void warranties for fun. All aside, this is just a loose custom spin of LineageOS with some added bells & whistles. I am a one-man h3k4r with limited time to update repos, build custom apps, etc. So the key here is to slowly build my own "custom user build" of Lineage for my personal needs. If they suit yours, then we both win ;)
 
 Continual W.I.P
