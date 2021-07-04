@@ -19,7 +19,7 @@
   <project path="lineage-sdk" name="H4K3ROM/android_lineage-sdk" remote="h4k3rom" /> 
 
     <!-- H4K3ROM additions -->
-  <project path="device/lineage/sepolicy" name="H4K3ROM/android_device_lineage_sepolicy" groups="pdk" remote="h4k3rom" />
+  <project path="device/h4k3rom/sepolicy" name="H4K3ROM/android_device_h4k3rom_sepolicy" groups="pdk" remote="h4k3rom" />
   <project path="vendor/h4k3rom" name="H4K3ROM/android_vendor_h4k3rom" remote="h4k3rom" />
   <project path="packages/apps/H4K3RWalls" name="H4K3ROM/H4K3RWalls" remote="h4k3rom" />    
   <project path="packages/apps/H4K3RWebb" name="H4K3ROM/H4K3RWebb" remote="h4k3rom" />      
