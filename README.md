@@ -18,6 +18,11 @@ repo sync --force-sync --no-tags --no-clone-bundle
 Building
 $ repo sync --force-sync --no-clone-bundle --no-tags -j$(nproc --all) && . build/envsetup.sh && brunch bonito
 
+Every now & then do a:
+```bash
+make clean & make clobber
+```
+
 ***Quoted from LineageOS Wiki***
 ```
 Turn on caching to speed up build
