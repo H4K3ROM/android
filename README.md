@@ -20,7 +20,7 @@ $ repo sync --force-sync --no-clone-bundle --no-tags -j$(nproc --all) && . build
 
 Every now & then do a:
 ```bash
-make clean & make clobber
+make clean && make clobber
 ```
 
 ***Quoted from LineageOS Wiki***
