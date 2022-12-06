@@ -9,7 +9,7 @@ Install [Git and Repo](http://source.android.com/source/using-repo.html).
 To initialize your local repo copy of H4K3ROM, use:
 
 ```bash
-repo init --depth=1 -u git://github.com/H4K3ROM/android.git -b 19.1
+repo init -u https://github.com/H4K3ROM/android.git -b 19.1
 ```
 Then to sync up:
 ```bash
