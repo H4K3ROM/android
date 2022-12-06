@@ -47,8 +47,6 @@
   <project path="packages/apps/SetupWizard" name="H4K3ROM/android_packages_apps_SetupWizard" remote="h4k3rom" />
   <project path="packages/apps/ThemePicker" name="H4K3ROM/android_packages_apps_ThemePicker" remote="h4k3rom" />
   <project path="packages/apps/WallpaperPicker2" name="H4K3ROM/android_packages_apps_WallpaperPicker2" groups="pdk-fs" remote="h4k3rom" />
-   <!--  <project path="packages/modules/DnsResolver" name="H4K3ROM/packages_modules_DnsResolver" groups="pdk-cw-fs,pdk-fs" remote="h4k3rom" />
-  <project path="packages/services/Telecomm" name="H4K3ROM/packages_services_Telecomm" remote="h4k3rom" /> -->
   <project path="platform_manifest" name="H4K3ROM/android" remote="h4k3rom" />
   <project path="system/core" name="H4K3ROM/android_system_core" groups="pdk" remote="h4k3rom" />
   <project path="system/sepolicy" name="H4K3ROM/android_system_sepolicy" groups="pdk" remote="h4k3rom" />
