@@ -56,7 +56,7 @@
   <!-- H4K3ROM Project Specific Repos To Sync -->
   <project path="packages/apps/ElmyraService" name="H4K3ROM/android_packages_apps_ElmyraService" remote="h4k3rom" />
   <project path="kernel/google/msm-4.9" name="H4K3ROM/android_kernel_google_msm-4.9"  remote="h4k3rom" />
-  <project path="vendor/google" name="H4K3ROM/proprietary_vendor_google" remote="h4k3rom" />  
+  <project path="vendor/google" name="H4K3ROM/proprietary_vendor_google_bonito" remote="h4k3rom" />  
   <project path="device/google/bonito" name="H4K3ROM/android_device_google_bonito" remote="h4k3rom" />  
 
 
