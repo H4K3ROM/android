@@ -50,7 +50,7 @@
   <project path="platform_manifest" name="H4K3ROM/android" remote="h4k3rom" />
   <project path="system/core" name="H4K3ROM/android_system_core" groups="pdk" remote="h4k3rom" />
   <project path="system/sepolicy" name="H4K3ROM/android_system_sepolicy" groups="pdk" remote="h4k3rom" />
-  <project path="vendor/crowdin" name="LineageOS/android_vendor_crowdin" />
+  <project path="vendor/crowdin" name="H4K3ROM/android_vendor_crowdin" remote="h4k3rom" />
   
   <!-- H4K3ROM Project Specific Repos To Sync -->
   <project path="packages/apps/ElmyraService" name="H4K3ROM/android_packages_apps_ElmyraService" remote="h4k3rom" />
